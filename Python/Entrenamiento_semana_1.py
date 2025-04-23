@@ -1,6 +1,6 @@
 #Se reciben datos de entrada
 nombreProducto = input("Ingrese el nombre del producto ")
-#Bucles de validación de datos de entrada
+#Bucles de validación de datos de entrada y su conversión de texto a número
 while True:
     precioUnitario = input("Ingrese el precio unitario ")
     if precioUnitario.isdigit() and float(precioUnitario) > 0:
