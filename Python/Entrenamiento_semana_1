@@ -1,1 +1,10 @@
-
+nombreProducto = input("Ingrese el nombre del producto ")
+while True:
+    precioUnitario = input("Ingrese el precio unitario ")
+    if precioUnitario.isdigit():
+        precioUnitario = float(precioUnitario)
+        break
+    else:
+        print("El dato ingresado no es un número ")
+cantidadProducto = input("Ingrese la cantidad deseada del producto ")
+porcentajeDescuento = input("Ingrese el porcentaje de descuento ")
