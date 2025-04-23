@@ -31,4 +31,4 @@ if porcentajeDescuento != 0:
     costoTotalCompra = precioSinDescuento - descuento
 else:
     costoTotalCompra = precioSinDescuento
-print(f"Producto: {nombreProducto} \nPrecio: {precioUnitario:.2f}  \nCantidad: {cantidadProducto} \nDescuento: \nCosto total: {costoTotalCompra:.2f}")
+print(f"Producto: {nombreProducto} \nPrecio: {precioUnitario:.2f}  \nCantidad: {cantidadProducto} \nDescuento: -{descuento} \nCosto total: {costoTotalCompra:.2f}")
