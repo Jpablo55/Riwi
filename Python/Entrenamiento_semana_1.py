@@ -10,7 +10,7 @@ while True:
         print("El dato ingresado no es un número o no es positivo")
 while True:
     cantidadProducto = input("Ingrese la cantidad deseada del producto ")
-    if cantidadProducto.isdigit() and int(cantidadProducto):
+    if cantidadProducto.isdigit() and int(cantidadProducto) > 0:
         cantidadProducto = int(cantidadProducto)
         break
     else:
