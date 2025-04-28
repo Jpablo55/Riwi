@@ -8,6 +8,7 @@ numeroAleatorio = random.randint(1, 10)
 try:
     for x in range(3):
         numeroIngresado = int(input("Adivina el número: Ingrese un número entero del 1 al 10.  \n"))
+        numeroMayor = numeroAleatorio > numeroIngresado
         if numeroIngresado > 0 and numeroIngresado <=10:
             if numeroIngresado == numeroAleatorio:
                 print(f"Felicidades!! has adivinado. El número es {numeroAleatorio}")
@@ -15,7 +16,8 @@ try:
             elif x == 2:
                 print(f"Lo siento. Perdiste. El número era {numeroAleatorio}")
             else:
-                print(f"Lo siento. Vuelve a intentarlo. Te quedan {3-(x+1)} intentos")
+                print(f"El número a adivinar es mayor al ingresado\nVuelve a intentarlo. Te quedan {3-(x+1)} intentos" * numeroMayor \
+                      + f"El número a adivinar es menor al ingresado\nVuelve a intentarlo. Te quedan {3-(x+1)} intentos" *  (not numeroMayor) )
         else:
             print("El número ingresado no está dentro del rango permitido")
         
