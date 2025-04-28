@@ -4,6 +4,8 @@ try:
     numero = float(numero)
     if numero >= 0:
         print(f"El número {numero} es positivo")
+    elif numero == 0:
+        print("El número es igual a 0")
     else: 
         print(f"El número {numero} es negativo")
 except ValueError:
