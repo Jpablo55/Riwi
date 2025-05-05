@@ -1,11 +1,7 @@
-inicioFibonnacci: int = 0
-secuenciaFibonnacci: int = 1
-numeroAnterior: int = 0
-for i in range(10):   
-    if inicioFibonnacci == 0:
-            print(inicioFibonnacci)
-            inicioFibonnacci+=1
-    else:
-          print(secuenciaFibonnacci)
-          secuenciaFibonnacci += numeroAnterior
-          numeroAnterior = secuenciaFibonnacci - numeroAnterior
+numero_actual: int = 0
+siguiente_numero: int = 1
+
+for _ in range(10):
+    print(numero_actual)
+    numero_actual, siguiente_numero = siguiente_numero, numero_actual + siguiente_numero
+
