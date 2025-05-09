@@ -51,7 +51,7 @@ while True:
                 try:
                     producto:str = input('Ingresa el nombre del producto\n').lower().strip()
                     while True:
-                        precio: float = int(input('Ingresa el precio\n'))
+                        precio: float = float(input('Ingresa el precio\n'))
                         if precio < 0:
                             print('El precio debe ser un número positivo')
                             continue
