@@ -8,9 +8,10 @@
         .a_nav{
             font-size: 17px;
         }
+        
     </style>
 </head>
-<body>
+<body style="margin: 0;">
     <header style="width: 100%; display: flex; align-items: center;">
         <img src="https://riwi.io/wp-content/uploads/2023/07/Fondo-claro-logo2-1.png" height="60px" style="margin-left: 100px;" alt="Logo Riwi">
         <p style="text-align: center; margin-left: 30px;"><strong>¿Necesitas talento para tu empresa?</strong> Tenemos el talento que necesitas aquí</p>
@@ -21,7 +22,9 @@
         <a href="https://riwi.io/empleadores/#Contacto" class="a_nav">Contacto</a>
         <a href="https://riwi.io/sobre-nosotros/#Nuestra-historia" class="a_nav" >Sobre nosotros</a>
     </nav>
-    <main style="width: 100%; height: 55vh; display: flex; justify-content: center; align-items: center; background-image: url(https://riwi.io/wp-content/uploads/2024/09/P-Mesa-de-trabajo-3-1.png); color: white;">
+    <main style="width: 100%; height: 55vh; display: flex; justify-content: center; align-items: center;
+     background-image: url(https://riwi.io/wp-content/uploads/2024/09/P-Mesa-de-trabajo-3-1.png); color: white;
+     flex-direction: column;">
         <section style="display: flex; justify-content: center; width: 70%; flex-direction: column;">
             <h2 style="align-self: center;">Nuestro curso</h2>
             <p>
@@ -35,5 +38,14 @@
             </p>
         </section>
     </main>
+    <section style="width: 100%; height: 55vh; display: flex; justify-content: center;  flex-direction: column; align-items: center;">
+        <video src="https://www.w3schools.com/html/mov_bbb.mp4" width="400px" height="250px" controls></video>
+        <form action="" style=" display: flex; flex-direction: column; margin-top: 50px;">
+            <span style="margin-bottom: 10px;">Nombre: <input type="text" name="" id="" required placeholder="Ingrese su nombre"></span>
+            <span style="margin-bottom: 10px;">E-mail: <input type="email" name="" id="" required placeholder="Ingrese su E-mail"></span>
+            <span >Edad: <input type="number" name="" id="" required placeholder="Ingrese su edad"></span>
+            <button style="width: 100px; margin:10px 40px;">Enviar</button>
+        </form>
+    </section>
 </body>
 </html>
