@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera página HTML</title>
+    <style>
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!--Ejercicio #7 Navbar-->
+    <nav style="display: flex; position: sticky; background-color: antiquewhite; height: 5vh; justify-content: space-around; align-items: center;">
+        <ul style="display: flex; justify-content: space-around; width: 100%;">
+            <li><a href="#inicio" style="color: rgb(1, 68, 88);">Inicio</a></li>
+            <li><a href="">Acerca de</a></li>
+            <li><a href="">Contacto</a></li>
+        </ul>
+    </nav>
+    <!--Ejercicio #1-->
+    <h1 id="inicio">Hola Mundo</h1>
+    <p>Esta es mi primera página en HTML.</p>
+    <!--Ejercicio #2-->
+    <h2><strong>Frutas preferidas</strong></h2>
+    <ul>
+        <li>Mango</li>
+        <li>Lulo</li>
+        <li>Naranja</li>
+    </ul>
+    <h2><strong>Taza de café:</strong></h2>
+    <ol>
+        <li>Calentar el agua</li>
+        <li>Servir las cucharadas de café en la taza</li>
+        <li>Vertir el agua en la taza</li>
+    </ol>
+    <!--Ejercicio #3-->
+    <section style="display: flex; flex-direction: column;">
+        <a href="https://www.google.com/?hl=es" >Google</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="https://github.com/"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github logo" width="70" height="70"></a>
+    </section>
+
+    <!--Ejercicio #4-->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/1200px-A_small_cup_of_coffee.JPG" 
+    alt="Taza-Café"
+    width="400px"
+    height="250px"
+    >
+    <!--Ejercicio #5-->
+    <video src="Assets/mov_bbb.mp4" controls height="250px" width="400px"></video>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/QF9tzn7UUIo?si=B3XwYii71EqaLLIV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!--Ejercicio #6-->
+    <table border="1" style="border-collapse: collapse;">
+        <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Ciudad</th>
+        </tr>
+        <tr>
+            <td>Daniela</td>
+            <td>23</td>
+            <td>Medellín</td>
+        </tr>
+        <tr>
+            <td>Alejandro</td>
+            <td>19</td>
+            <td>Bogotá</td>
+        </tr>
+        <tr>
+            <td>Mariana</td>
+            <td>17</td>
+            <td>Medellín</td>
+        </tr>
+    </table>
+    <!--Ejercicio #8-->
+    <form action="" style="display: flex; flex-direction: column;">
+        <span>Nombre: <input type="text" name="nombre" id="" required></span>
+        <span>Correo: <input type="email" name="correo" id="" required></span>
+        <span>Mensaje: </span><textarea name="mensaje-form" id="" style="width: 200px;"></textarea>
+        <button style="width: 50px; height:20px ;">Enviar</button>
+    </form>
+    <!--Ejercicio #9-->
+    <form action="" style="display: flex; flex-direction: column;">
+        <span>Nombre: <input type="text" name="nombre" id="" required></span>
+        <span>Correo: <input type="email" name="correo" id="" required></span>
+        <span>Contraseña: <input type="password" name="contraseña" id=""></span>
+        <span>Edad: <input type="number" name="edad" id=""> </span>
+        <span>Fecha Nacimiento: <input type="date" name="nacimiento" id=""></span>
+        <span>Sexo: <input type="radio" name="sexo" id=""> <input type="radio" name="sexo" id=""></span>
+        <span>
+            Ciudad:
+            <select name="" id="">
+                <option value="medellin">Medellín</option>
+                <option value="bogota">Bogotá</option>
+            </select>
+        </span>
+        <span><input type="checkbox" required> Acepta los términos y condiciones</span>
+        <button style="width: 50px; height:20px ;">Enviar</button>
+    </form>
+</body>
+</html>
