@@ -28,7 +28,20 @@
             flex-direction: row;
         }
         header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
             background-color: rgb(234, 245, 255) ;
+        }
+        main{
+            display: flex; 
+            align-items: center; 
+            border-radius: 7px; 
+            justify-content: center;
+            background-color: aqua;
+            margin: 0px 50px;
+            width: 80%;
         }
     </style>
 </head>
@@ -43,18 +56,20 @@
             <li><a href="#projects">Proyectos</a></li>
         </ul>
     </nav>
-    <section id="about-me">
-        <h2>About me</h2>
-        <p>Hello. I'm Juan Pablo Jiménez Cardona</p>
-        <p>I love creating attractive and functional websites. I'm constantly learning to improve my skills</p>
-        <p></p>
-    </section>
-    <figure>
-        <img 
-        src="https://static.wikia.nocookie.net/divertipedia/images/2/28/Patricio_estrella.jpg/revision/latest/scale-to-width-down/308?cb=20210327030552&path-prefix=es" 
-        alt="Foto de perfil"
-        width="400px" height="250px">
-    </figure>
+    <main>
+        <figure>
+            <img 
+            src="https://static.wikia.nocookie.net/divertipedia/images/2/28/Patricio_estrella.jpg/revision/latest/scale-to-width-down/308?cb=20210327030552&path-prefix=es" 
+            alt="Foto de perfil"
+            width="400px" height="250px">
+        </figure>
+        <section id="about-me">
+            <h2>About me</h2>
+            <p>Hello. I'm Juan Pablo Jiménez Cardona</p>
+            <p>I love creating attractive and functional websites. I'm constantly learning to improve my skills</p>
+            <p></p>
+        </section>
+    </main>
     <!--Skills-->
     <section>
         <ul>
