@@ -38,15 +38,17 @@
             display: flex; 
             align-items: center; 
             border-radius: 7px; 
-            justify-content: center;
-            background-color: aqua;
-            margin: 0px 50px;
+            margin: 0px;
         }
         #intro{
             margin-top: 100px;
             display: flex;
             border-radius: 9px;
-            background-color: brown;
+        }
+        #about-me,
+        #projects,
+        #contact {
+            scroll-margin-top: 60px;
         }
     </style>
 </head>
@@ -57,18 +59,17 @@
     <nav>
         <ul id="ul-nav">
             <li><a href="#about-me">About me</a></li>
-            <li><a href="#contact">Contacto</a></li>
             <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
         </ul>
     </nav>
     <main>
         <section id="intro">
             <figure>
                 <img 
-                src="https://static.wikia.nocookie.net/divertipedia/images/2/28/Patricio_estrella.jpg/revision/latest/scale-to-width-down/308?cb=20210327030552&path-prefix=es" 
+                src="Assets/Profile_picture.jpeg" 
                 alt="Foto de perfil"
-                width="400px" height="250px"
-                style="transform: rotate(180deg);">
+                width="400px" height="250px" style="border-radius: 50%;">
             </figure>
             <section id="about-me">
                 <h2>About me</h2>
@@ -78,16 +79,17 @@
             </section>
         </section>
     </main>
-    <!--Skills-->
-    <section>
+    <section style="margin-left: 40px; margin-top: 100px;">
+        <h2>Skills:</h2>
         <ul>
             <li>HTML - CSS</li>
             <li>Javascript - React</li>
             <li>Typescript</li>
         </ul>
     </section>
+    <!--Skills-->
     <!--Projects-->
-    <section id="projects">
+    <section id="projects" style="margin-left: 40px;">
         <h2>Projects</h2>
         <h3>Inventory management</h3>
         <p>this project shows a implementation of a managment system of a store's inventory, allowing for the addition of products, efficient tracking of available products,
@@ -96,7 +98,7 @@
             <img src="Assets/Readme_Inventory.png" alt="Readme inventory" width="300" height="400">
             <img src="Assets/Ejecucion_Inventory.png" alt="Ejecucion_Inventory" width="400" height="400">
         </figure>
-        <table border="1" style="border-collapse: collapse;">
+        <table border="1" style="border-collapse: collapse; margin-bottom: 40px; margin-left: 40px;">
             <tr>
                 <th>Project name</th>
                 <th>Tecnologies used</th>
@@ -110,15 +112,18 @@
 
         </table>
     </section>
-    <section id="contact">
-        <form action="" style="display:flex; flex-direction: column;">
+    <section id="contact" style="margin-left: 40px;">
+        <h2>Contact</h2>
+        <form action="" style="display:flex; flex-direction: column; margin-bottom: 30px;">
             <label for="name">Name: <input type="text" name="name" id="name" placeholder="Name" required></label>
             <label for="email">E-mail: <input type="email" name="email" id="email" placeholder="Email" required></label>
             <label for="message">Message: </label>  
-            <textarea name="message" id="message" placeholder="Message" required></textarea>
-            <input type="submit" value="send" style="width: 100px;">
+            <textarea name="message" id="message" placeholder="Message" required style="width: 350px;"></textarea>
+            <input type="submit" value="send" style="width: 100px; margin-left: 100px;">
         </form>
-        <a href="https://github.com/Jpablo55" target="_blank">Github</a>
     </section>
+    <footer>
+        <a href="https://github.com/Jpablo55" target="_blank" style="margin-left: 50px;font-size: 20px; ">Github</a>
+    </footer>
 </body>
 </html>
